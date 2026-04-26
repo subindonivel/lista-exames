@@ -5,64 +5,76 @@
 <title>Sugestão de Exames</title>
 
 <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #0f2a44, #1e4e79, #3a7ca5);
-        color: white;
-    }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2a44, #1e4e79, #3a7ca5);
+    color: white;
+}
 
-    .container {
-        max-width: 850px;
-        margin: 40px auto;
-        padding: 40px;
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: 16px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-    }
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    position: relative; /* 🔥 necessário */
+}
 
-    h1 {
-        text-align: center;
-        margin-bottom: 30px;
-        font-weight: bold;
-        letter-spacing: 1px;
-    }
+/* 🔥 LOGO */
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
 
-    .section {
-        margin-bottom: 25px;
-    }
+.logo img {
+    width: 110px;
+}
 
-    .section h2 {
-        font-size: 18px;
-        border-left: 4px solid #00cfff;
-        padding-left: 10px;
-        margin-bottom: 10px;
-    }
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 
-    ul {
-        list-style: none;
-        padding: 0;
-    }
+.section {
+    margin-bottom: 25px;
+}
 
-    li {
-        margin-bottom: 8px;
-        padding-left: 15px;
-        position: relative;
-    }
+.section h2 {
+    font-size: 18px;
+    border-left: 4px solid #00cfff;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
 
-    li::before {
-        content: "•";
-        position: absolute;
-        left: 0;
-        color: #00d4ff;
-    }
+ul {
+    list-style: none;
+    padding: 0;
+}
 
-    .footer {
-        margin-top: 40px;
-        text-align: center;
-        font-size: 12px;
-        opacity: 0.7;
-    }
+li {
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+}
+
+li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #00d4ff;
+}
+
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.7;
+}
 </style>
 
 </head>
@@ -70,6 +82,11 @@
 <body>
 
 <div class="container">
+
+    <!-- 🔥 LOGO NO TOPO DIREITO -->
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
 
     <h1>Sugestões de Exames Laboratoriais</h1>
 
